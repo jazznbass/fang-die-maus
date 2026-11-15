@@ -7,12 +7,14 @@ export class BlockSummaryDisplay {
       <section class="outcome-panel"><h2><strong>${summary.caught}</strong> gefangen</h2>
         <div class="summary-scene cage-scene"><div class="summary-mice"></div>
           <img class="summary-cage" src="assets/cage.svg" alt="" aria-hidden="true"></div>
-        <p class="outcome-caption">Im Käfig</p></section>
+        <!-- <p class="outcome-caption">Im Käfig</p> -->
+        </section>
       <section class="outcome-panel"><h2><strong>${summary.escaped}</strong> entkommen</h2>
         <div class="summary-scene cheese-scene">
           <img class="summary-cheese" src="assets/summary-cheese.svg" alt="" aria-hidden="true">
           <div class="summary-mice"></div></div>
-        <p class="outcome-caption">Auf dem Käse</p></section>
+        <!-- <p class="outcome-caption">Auf dem Käse</p> -->
+        </section>
       </div>`;
     this.fillMice(this.element.querySelector('.cage-scene .summary-mice'), summary.caught);
     this.fillMice(this.element.querySelector('.cheese-scene .summary-mice'), summary.escaped);
