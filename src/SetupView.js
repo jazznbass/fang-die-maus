@@ -11,17 +11,16 @@ export class SetupView {
   }
 
   async mount() {
-    this.element.innerHTML = `<section class="setup card"><p class="eyebrow">VORBEREITUNG · FÜR DIE TESTLEITUNG</p>
-      <h1>Mäuse fangen</h1><p class="intro">Hier wird der Test vorbereitet.</p>
-      <form><label>Einstellungen<select id="configuration"><option value="demo">Kurzer Test</option><option value="study">Ganzer Test</option><option value="custom">Eigene Datei laden …</option></select></label>
+    this.element.innerHTML = `<section class="setup card">
+      <h1>Fang die Maus!</h1><p class="intro">VORBEREITUNG · FÜR DIE TESTLEITUNG</p>
+      <form><label>Einstellungen<select id="configuration"><option value="demo">Demo Test</option><option value="study">Ganzer Test</option><option value="custom">Eigene Datei laden …</option></select></label>
       <label id="file-label" class="file-picker" hidden>Datei mit Einstellungen
       <input id="config-file" type="file" accept=".json,application/json">
       <span class="file-picker-button">Datei auswählen</span><span id="selected-file">Keine Datei ausgewählt</span></label>
       <div class="form-row"><label>Code der Person<input id="participant" required pattern="[A-Za-z0-9_-]+" maxlength="64" placeholder="z. B. P001" autocomplete="off"></label>
-      <label>Variante<select id="condition"></select></label></div>
+      <label>Bedingung<select id="condition"></select></label></div>
       <p id="config-summary" class="config-summary"></p>
-      <p class="muted">Bitte eine deutsche Tastatur benutzen. Die Tasten sind Y, X, M und Komma.</p>
-      <p id="setup-error" role="alert"></p><button id="start" type="submit">Test vorbereiten</button></form>
+      <p id="setup-error" role="alert"></p><button id="start" type="submit">Test starten</button></form>
       <p class="prototype-note">Testversion: Vor der Studie bitte die Einstellungen und die Zeitmessung prüfen.</p>
       <details><summary>Frühere Ergebnisse öffnen</summary><p class="muted">Hier liegen Kopien früherer Ergebnisse. Bitte die Dateien herunterladen und aufbewahren.</p><div id="recovery"></div></details></section>`;
     this.element.querySelector('#configuration').onchange = () => this.loadSelection();

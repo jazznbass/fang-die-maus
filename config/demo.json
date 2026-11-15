@@ -54,7 +54,7 @@
         3,
         1
       ],
-      "additionalInstruction": "Die Mäuse kommen in einer festen Reihenfolge.\nDiese Reihenfolge wiederholt sich.\nVersuche, dir die Reihenfolge zu merken.\nDann kannst du die Mäuse schneller fangen."
+      "additionalInstruction": "Die Mäuse haben sich abgesprochen! Sie kommen in einer festen Reihenfolge aus den Löchern.\nDiese Reihenfolge wiederholt sich.\nVersuche, dir die Reihenfolge zu merken.\nDann kannst du die Mäuse schneller fangen."
     }
   },
   "blocks": [

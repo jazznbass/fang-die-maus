@@ -5,7 +5,7 @@ export class UiText {
   }
 
   static condition(name) {
-    return { implicit: 'Variante 1', explicit: 'Variante 2' }[name] ?? name;
+    return { implicit: 'Implizit', explicit: 'Explizit' }[name] ?? name;
   }
 
   static stopReason(reason) {
