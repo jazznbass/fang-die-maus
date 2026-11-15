@@ -1,0 +1,264 @@
+{
+  "id": "0a15d9af-58e8-43d1-ba00-d98d664cf53b",
+  "participantId": "TEST_TIMEOUT",
+  "condition": "explicit",
+  "seed": 3609673248,
+  "config": {
+    "configVersion": 1,
+    "studyId": "srt-timeout-test",
+    "status": "draft",
+    "defaultCondition": "explicit",
+    "positions": [
+      {
+        "id": 1,
+        "color": "#ff0000",
+        "keyCode": "KeyZ",
+        "keyLabel": "Y"
+      },
+      {
+        "id": 2,
+        "color": "#00ff00",
+        "keyCode": "KeyX",
+        "keyLabel": "X"
+      },
+      {
+        "id": 3,
+        "color": "#0000ff",
+        "keyCode": "KeyM",
+        "keyLabel": "M"
+      },
+      {
+        "id": 4,
+        "color": "#ffff00",
+        "keyCode": "Comma",
+        "keyLabel": ","
+      }
+    ],
+    "conditions": {
+      "implicit": {
+        "sequence": [
+          1,
+          3,
+          4,
+          2,
+          3,
+          1,
+          2,
+          4
+        ],
+        "additionalInstruction": ""
+      },
+      "explicit": {
+        "sequence": [
+          4,
+          2,
+          1,
+          3,
+          2,
+          4,
+          3,
+          1
+        ],
+        "additionalInstruction": "This time, the mice agreed to come out of the mouse holes in a regular order. If you can figure out the order, you will be able to catch them faster."
+      }
+    },
+    "blocks": [
+      {
+        "type": "random",
+        "trials": 2
+      }
+    ],
+    "sequence": {
+      "start": "first_item_each_block"
+    },
+    "randomization": {
+      "seed": 3609673248,
+      "sampling": "uniform_over_allowed_positions",
+      "allowImmediateRepeats": false,
+      "avoidRepeatAcrossBlockBoundary": true,
+      "balancePositionCounts": false
+    },
+    "timing": {
+      "responseToNextStimulusMs": 50,
+      "feedbackDurationMs": 0,
+      "responseDeadlineMs": 300
+    },
+    "response": {
+      "wrongMappedKey": "end_trial",
+      "unmappedKey": "ignore_and_log",
+      "earlyKeypress": "ignore_and_log",
+      "requireKeyReleaseBeforeResponse": true,
+      "ignoreAutoRepeat": true
+    },
+    "feedback": {
+      "visual": true,
+      "text": false,
+      "sound": false
+    },
+    "practice": {
+      "trials": 1
+    },
+    "breaks": {
+      "betweenBlocks": false,
+      "continueWith": "Space"
+    },
+    "instructions": {
+      "language": "en",
+      "general": "Catch each mouse by pressing the key matching its hole. Respond as quickly and accurately as possible.",
+      "break": "Take a short break. Press Space when you are ready to continue.",
+      "end": "The task is complete. Thank you."
+    },
+    "presentation": {
+      "theme": "mice",
+      "showKeyLabels": true,
+      "requestFullscreen": false
+    },
+    "qualityControl": {
+      "onFocusLoss": "interrupt_and_flag_trial"
+    },
+    "output": {
+      "trialFormat": "csv",
+      "saveSessionJson": true,
+      "saveResolvedConfig": true
+    }
+  },
+  "appVersion": "0.1.0",
+  "plannerVersion": "mulberry32-v1",
+  "jsPsychVersion": "8.3.0",
+  "startedAt": "2026-11-13T07:27:20.866Z",
+  "endedAt": "2026-11-13T07:27:22.181Z",
+  "status": "completed",
+  "stopReason": null,
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "language": "en-GB",
+    "screenWidth": 1920,
+    "screenHeight": 1080,
+    "devicePixelRatio": 1,
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+    "timeOrigin": 1794554825076.7,
+    "fullscreen": false
+  },
+  "plan": [
+    {
+      "trialNumber": 1,
+      "block": 0,
+      "trialInBlock": 1,
+      "blockType": "random",
+      "practice": true,
+      "sequencePosition": null,
+      "target": 4,
+      "expectedKey": "Comma"
+    },
+    {
+      "trialNumber": 2,
+      "block": 1,
+      "trialInBlock": 1,
+      "blockType": "random",
+      "practice": false,
+      "sequencePosition": null,
+      "target": 2,
+      "expectedKey": "KeyX"
+    },
+    {
+      "trialNumber": 3,
+      "block": 1,
+      "trialInBlock": 2,
+      "blockType": "random",
+      "practice": false,
+      "sequencePosition": null,
+      "target": 1,
+      "expectedKey": "KeyZ"
+    }
+  ],
+  "trials": [
+    {
+      "trialNumber": 1,
+      "block": 0,
+      "trialInBlock": 1,
+      "blockType": "random",
+      "practice": true,
+      "sequencePosition": null,
+      "target": 4,
+      "expectedKey": "Comma",
+      "outcome": "timeout",
+      "correct": false,
+      "responseCode": null,
+      "responseKey": null,
+      "rtMs": null,
+      "onsetTimestampMs": 16085.599999999627,
+      "responseTimestampMs": null,
+      "timeoutTimestampMs": 16386.200000000186,
+      "previousIntervalAnchor": null,
+      "intervalFromPreviousResponseMs": null,
+      "feedbackOnsetTimestampMs": null,
+      "feedbackOffsetTimestampMs": null,
+      "interrupted": false,
+      "interruptionReason": null,
+      "inputEvents": [],
+      "trial_type": "mouse-srt",
+      "trial_index": 1,
+      "plugin_version": "0.1.0",
+      "time_elapsed": 582
+    },
+    {
+      "trialNumber": 2,
+      "block": 1,
+      "trialInBlock": 1,
+      "blockType": "random",
+      "practice": false,
+      "sequencePosition": null,
+      "target": 2,
+      "expectedKey": "KeyX",
+      "outcome": "timeout",
+      "correct": false,
+      "responseCode": null,
+      "responseKey": null,
+      "rtMs": null,
+      "onsetTimestampMs": 16436.400000000373,
+      "responseTimestampMs": null,
+      "timeoutTimestampMs": 16737,
+      "previousIntervalAnchor": "timeout",
+      "intervalFromPreviousResponseMs": 50.200000000186265,
+      "feedbackOnsetTimestampMs": null,
+      "feedbackOffsetTimestampMs": null,
+      "interrupted": false,
+      "interruptionReason": null,
+      "inputEvents": [],
+      "trial_type": "mouse-srt",
+      "trial_index": 2,
+      "plugin_version": "0.1.0",
+      "time_elapsed": 933
+    },
+    {
+      "trialNumber": 3,
+      "block": 1,
+      "trialInBlock": 2,
+      "blockType": "random",
+      "practice": false,
+      "sequencePosition": null,
+      "target": 1,
+      "expectedKey": "KeyZ",
+      "outcome": "timeout",
+      "correct": false,
+      "responseCode": null,
+      "responseKey": null,
+      "rtMs": null,
+      "onsetTimestampMs": 16802.599999999627,
+      "responseTimestampMs": null,
+      "timeoutTimestampMs": 17103.5,
+      "previousIntervalAnchor": "timeout",
+      "intervalFromPreviousResponseMs": 65.59999999962747,
+      "feedbackOnsetTimestampMs": null,
+      "feedbackOffsetTimestampMs": null,
+      "interrupted": false,
+      "interruptionReason": null,
+      "inputEvents": [],
+      "trial_type": "mouse-srt",
+      "trial_index": 3,
+      "plugin_version": "0.1.0",
+      "time_elapsed": 1299
+    }
+  ]
+}

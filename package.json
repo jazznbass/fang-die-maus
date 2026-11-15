@@ -1,0 +1,15 @@
+{
+  "name": "mouse-srt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "vendor": "node scripts/copy-vendor.js",
+    "test": "node --test tests/unit/*.test.js"
+  },
+  "dependencies": {
+    "@jspsych/plugin-html-button-response": "2.1.0",
+    "jspsych": "8.3.0"
+  }
+}

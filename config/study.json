@@ -1,0 +1,153 @@
+{
+  "configVersion": 1,
+  "studyId": "mouse-srt",
+  "status": "draft",
+  "defaultCondition": "implicit",
+  "positions": [
+    {
+      "id": 1,
+      "color": "#ff0000",
+      "keyCode": "KeyZ",
+      "keyLabel": "Y"
+    },
+    {
+      "id": 2,
+      "color": "#00ff00",
+      "keyCode": "KeyX",
+      "keyLabel": "X"
+    },
+    {
+      "id": 3,
+      "color": "#0000ff",
+      "keyCode": "KeyM",
+      "keyLabel": "M"
+    },
+    {
+      "id": 4,
+      "color": "#ffff00",
+      "keyCode": "Comma",
+      "keyLabel": ","
+    }
+  ],
+  "conditions": {
+    "implicit": {
+      "sequence": [
+        1,
+        3,
+        4,
+        2,
+        3,
+        1,
+        2,
+        4
+      ],
+      "additionalInstruction": ""
+    },
+    "explicit": {
+      "sequence": [
+        4,
+        2,
+        1,
+        3,
+        2,
+        4,
+        3,
+        1
+      ],
+      "additionalInstruction": "Die Mäuse kommen in einer festen Reihenfolge.\nDiese Reihenfolge wiederholt sich.\nVersuche, dir die Reihenfolge zu merken.\nDann kannst du die Mäuse schneller fangen."
+    }
+  },
+  "blocks": [
+    {
+      "type": "sequence",
+      "repetitions": 12
+    },
+    {
+      "type": "sequence",
+      "repetitions": 12
+    },
+    {
+      "type": "sequence",
+      "repetitions": 12
+    },
+    {
+      "type": "random",
+      "trials": 96
+    },
+    {
+      "type": "sequence",
+      "repetitions": 12
+    }
+  ],
+  "sequence": {
+    "start": "first_item_each_block"
+  },
+  "randomization": {
+    "seed": null,
+    "sampling": "uniform_over_allowed_positions",
+    "allowImmediateRepeats": false,
+    "avoidRepeatAcrossBlockBoundary": true,
+    "balancePositionCounts": false
+  },
+  "timing": {
+    "responseToNextStimulusMs": 500,
+    "feedbackDurationMs": 400,
+    "responseDeadlineMs": 1000
+  },
+  "response": {
+    "wrongMappedKey": "end_trial",
+    "unmappedKey": "warn_and_repeat",
+    "earlyKeypress": "ignore_and_log",
+    "requireKeyReleaseBeforeResponse": true,
+    "ignoreAutoRepeat": true
+  },
+  "feedback": {
+    "visual": true,
+    "text": false,
+    "sound": false
+  },
+  "practice": {
+    "trials": 0
+  },
+  "breaks": {
+    "betweenBlocks": true,
+    "continueWith": "ANY_KEY",
+    "showSummary": true
+  },
+  "instructions": {
+    "language": "de",
+    "general": "An jedem Loch steht eine Falle.\nMit der Taste machst du sie zu.",
+    "break": "Drücke eine Taste.\nDann beginnt die nächste Runde.",
+    "end": "Du bist fertig. Danke fürs Mitmachen!",
+    "blockEncouragement": "Weiter so! Fang auch in der nächsten Runde die Mäuse.",
+    "invalidKey": "⚠️ Das war keine der vier farbigen Tasten!\nLeg deine Finger auf diese Tasten:",
+    "invalidKeyContinue": "Drück eine Taste um weiterzumachen.",
+    "ready": "Leg die Finger auf die Tasten",
+    "readyContinue": "Drücke eine Taste um zu starten",
+    "title": "Fang die Maus!",
+    "story": "Die Maus will den Käse klauen.\nSie kommt aus einem von vier Löchern.",
+    "storyAction": "Fang die Maus und rette den Käse!",
+    "controlsTitle": "So fängst du die Maus",
+    "controlsAction": "",
+    "questions": "Drücke eine Taste.",
+    "nextPage": "Drücke eine Taste.",
+    "extraTitle": "",
+    "caughtExample": "Wenn du die richtige Taste drückst, fängst du die Maus:",
+    "escapedExample": "Bist du zu langsam, entkommt die Maus:",
+    "outcomesContinue": "Alles klar? Drücke eine Taste."
+  },
+  "presentation": {
+    "theme": "mice",
+    "showKeyLabels": false,
+    "requestFullscreen": true,
+    "backgroundColor": "#FFCE25"
+  },
+  "qualityControl": {
+    "onFocusLoss": "interrupt_and_flag_trial"
+  },
+  "output": {
+    "trialFormat": "csv",
+    "saveSessionJson": true,
+    "saveResolvedConfig": true
+  }
+}
